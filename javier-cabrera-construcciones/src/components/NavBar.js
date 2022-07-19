@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import CartWidget from './CartWidget';
 
 const pages = ['Inicio', 'Obras', '¿Quien soy?', 'Contacto'];
 
@@ -111,6 +112,9 @@ const NavBar = () => {
                 {page}
               </Button>
             ))}
+          </Box>
+          <Box sx={{ flexGrow: 0 }}>
+            <CartWidget  count='2'/>
           </Box>
         </Toolbar>
       </Container>
